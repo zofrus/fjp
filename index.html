@@ -4,3 +4,10 @@ const JSX = (
 	<p>Lets render this to the DOM</p>
 </div>
 );
+
+// After being transpiled, the <div> will have a CSS class of 'customClass'
+const DemoComponent = function() {
+  return (
+    <div className='customClass' />
+  );
+};
