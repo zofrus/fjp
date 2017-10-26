@@ -1,0 +1,25 @@
+const JSX = (
+<div className='myDiv'>
+	<h1>Hello World</h1>
+	<p>Lets render this to the DOM</p>
+</div>
+);
+
+// After being transpiled, the <div> will have a CSS class of 'customClass'
+const DemoComponent = function() {
+  return (
+    <div className='customClass' />
+  );
+};
+
+//basic React class syntax
+class MyComponent extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+  render() {
+		return (
+     	<div><h1>Hello React!</h1></div>
+    )
+  }
+};
